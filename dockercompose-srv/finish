@@ -1,4 +1,5 @@
 #!/usr/bin/execlineb -P
 envfile /etc/s6/config/dockercompose.conf
 importas -sCiu DOCKER_COMPOSE_FILE DOCKER_COMPOSE_FILE
+fdmove -c 2 1
 exec /usr/bin/docker-compose -f ${DOCKER_COMPOSE_FILE} down
