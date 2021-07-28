@@ -1,3 +1,3 @@
 # dockercompose-s6
 
-Docker compose services for s6 init.
+Docker compose service for s6 init.
